@@ -200,6 +200,10 @@ class CVMaker
       put_string(value_x, y, i["value"].to_s, font_size, font_face)
       y = y - dy
     end
+
+    # 空行
+    y = y - dy
+
     put_string(caption_x, y, "職歴", font_size, font_face)
     y = y - dy
     experience = @data["experience"]
@@ -294,7 +298,7 @@ Please download IPAex fonts via
 
 https://ipafont.ipa.go.jp/node26
 
-and place them as 
+and place them as
 
 ├── fonts
 │   ├── ipaexg.ttf
